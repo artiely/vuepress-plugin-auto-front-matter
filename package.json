@@ -1,0 +1,23 @@
+{
+  "name": "vuepress-plugin-auto-front-matter",
+  "version": "0.0.1",
+  "description": "page auto-front-matter plugin for vuepress",
+  "main": "index.js",
+  "authors": {
+    "name": "artiely",
+    "email": "artiely1024@gmail.com"
+  },
+  "files": [
+    "index.js"
+  ],
+  "repository": "/artiely/vuepress-plugin-auto-front-matter",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "cross-spawn": "^6.0.5",
+    "remove-markdown": "^0.3.0"
+  }
+}
