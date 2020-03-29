@@ -7,10 +7,10 @@ module.exports = (options = {}, context) => ({
     const _author = $page.frontmatter.author || author || getGitAuthors($page._filePath)
     $page.author = _author
     $page.frontmatter.author = _author
-    const _title = $page.frontmatter.title || title || getTitle($page._strippedContent)
+    const _title = $page.frontmatter.title || getTitle($page._strippedContent) || title
     $page.title = _title
     $page.frontmatter.title = _title
-    const _summary = $page.frontmatter.summary || summary || getSummary($page._strippedContent, summaryLength) || '请查看详情'
+    const _summary = $page.frontmatter.summary || getSummary($page._strippedContent, summaryLength) || summary || '请查看详情'
 
     $page.summary = _summary
     $page.frontmatter.summary = _summary
