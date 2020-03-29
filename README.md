@@ -37,10 +37,10 @@ module.exports = {
 module.exports = {
     plugins: [
       ['auto-front-matter',{
-        author: 'Artiely'
-        summary: '详情请查看',
-        summaryLength: 200
-        location: 'Wuhan,China'
+        author: 'Artiely' // 默认的全局作者
+        summary: '详情请查看', // 默认的全局说明
+        summaryLength: 200  // 说明的长度
+        location: 'Wuhan,China' // 默认的全局地址
       }],
       // other plugins
     ]
