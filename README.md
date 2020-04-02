@@ -1,7 +1,6 @@
 # vuepress-plugin-auto-front-matter
 
-
-自动生成部分重复性的Front Matter。
+自动生成部分重复性的 Front Matter。
 
 ```
 ----
@@ -9,6 +8,7 @@ author:
 title:
 date:
 summary:
+description:
 location:
 ----
 ```
@@ -45,4 +45,20 @@ module.exports = {
       // other plugins
     ]
 }
+```
+## result
+
+```js
+$page:{
+  frontmatter:{
+    title: "....",
+    date: "2020-4-1",
+    author: "Artiely",
+    summary: "......",
+    description: "......",
+    location: "Wuhan,China",
+    // ...
+  }
+}
+
 ```
